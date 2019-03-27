@@ -1,0 +1,16 @@
+.body-page {
+  margin: 0;
+  background: url(../img/bgi.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Exo 2.0', arial;
+}
+
+.body__man {
+  position: absolute;
+  bottom: 0;
+  left: 600px;
+}

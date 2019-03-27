@@ -1,0 +1,220 @@
+.body-page {
+  margin: 0;
+  background: url(../img/bgi.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Exo 2.0', arial;
+}
+
+.body__man {
+  position: absolute;
+  bottom: 0;
+  left: 600px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,23,38, .3);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 55px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 0;
+  padding: 0;
+  width: 1170px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 1170px;
+  height: 100%;
+  list-style: none;
+}
+
+.nav__item {
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Exo 2.0 Semi';
+  color: #000;
+}
+
+
+.logo {
+  display: flex;
+}
+
+.logo__title {
+  margin-left: 15px;
+  width: 60%;
+  word-wrap: wrap;
+  font-family: 'Exo 2.0';
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.logo__img {
+  width: 68px;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 15px;
+}
+
+.phone__number {
+  font-family: 'Exo 2.0';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.phone__modale {
+  font-family: 'Exo 2.0';
+  font-size: 14px;
+  color: #dd2c14;
+}
+
+.main {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px auto 0;
+  padding: 0;
+  width: 1170px;
+}
+
+.main__title {
+  position: relative;
+  width: 620px;
+}
+
+.main__title:before {
+  position: absolute;
+	right: 50px;
+  bottom: -85px;
+  border-bottom: 60px solid transparent;
+	border-left: 60px solid transparent;
+	border-top: 60px solid #dd2c14;
+	width: 0;
+	height: 0;
+	content: '';
+} 
+
+.main__title-text {
+  background-color: #dd2c14;
+  padding: 40px 44px;
+  color: #fff;
+  font-family: 'Exo 2.0';
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.main__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main__feedback {
+  z-index: 10;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.benefits__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  background-color: rgba(0, 23, 38, .9);
+  width: 620px;
+}
+
+.benefits__img {
+  padding: 10px;
+}
+
+.benefits__description {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.benefits__title {
+  margin: 0;
+  padding: 10px 10px 0;
+  font-size: 24px;
+  font-family: 'Exo 2.0';
+  font-weight: bold;
+  
+}
+
+.benefits__text {
+  margin: 0;
+  padding: 0 10px 10px;
+  font-family: 'Exo 2.0';
+  font-size: 14px;
+}
+
+.feedback {
+  background-color: rgba(238, 242, 245, .9);
+  width: 365px;
+}
+
+.feedback__title {
+  margin: 0;
+  padding: 40px 40px 0;
+}
+
+.feedback__text {
+  margin: 0;
+  padding: 20px 40px;
+}
+
+.feedback__form {
+  margin: 0;
+  padding: 20px 40px;
+}
+
+.feedback__list {
+  list-style: none;
+}
+
+
+
+/* @media (min-width: 1024px) {
+  .body-page {
+    margin: 0 375px;
+    padding: 0 15px;
+  }
+} */

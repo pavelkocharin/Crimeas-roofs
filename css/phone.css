@@ -1,0 +1,18 @@
+.phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 15px;
+}
+
+.phone__number {
+  font-family: 'Exo 2.0';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.phone__modale {
+  font-family: 'Exo 2.0';
+  font-size: 14px;
+  color: #dd2c14;
+}

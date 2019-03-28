@@ -70,7 +70,7 @@
           <span class="phone__number">
             + 7 (978) 787-25-46
           </span>
-          <a class="phone__modale" href="#">
+          <a class="phone__modale" href="#" onclick="openModal();">
             Заказать звонок
           </a>
         </div>
@@ -123,11 +123,11 @@
         <div class="main__feedback">
           <div class="feedback">
             <h3 class="feedback__title">
-            УЗНАЙТЕ ЦЕНУ <br> ЗА 3 МИНУТЫ
-          </h3>
-          <p class="feedback__text">
-            Оставьте заявку на расчет цены <br> и узнайте точные сроки и стоимость работ
-          </p>
+              УЗНАЙТЕ ЦЕНУ <br> ЗА 3 МИНУТЫ
+            </h3>
+            <p class="feedback__text">
+              Оставьте заявку на расчет цены <br> и узнайте точные сроки и стоимость работ
+            </p>
             <form class="feedback__form" id="feedback" name="feedback" method="POST">
               <ul class="feedback__list">
                 <li class="feedback__item">
@@ -159,9 +159,70 @@
         </div>
         <div class="main__content-man"></div>  
       </div>
-      
     </main>
-    
+    <div class="modal">
+      <h3 class="feedback__title modal__title">
+        УЗНАЙТЕ ЦЕНУ <br> ЗА 3 МИНУТЫ
+        <btn class="modal__close">x</btn>
+      </h3>
+      <p class="feedback__text">
+        Оставьте заявку на расчет цены <br> и узнайте точные сроки и стоимость работ
+      </p>
+      <form class="feedback__form" id="feedback" name="feedback" method="POST">
+        <ul class="feedback__list modal__list">
+          <li class="feedback__item">
+            <input class="feedback__input modal__imput" type="text" name="username" required autocomplete="off">
+            <img class="feedback__input--logo modal__input--logo" src="./img/form-user.svg">
+          </li>
+          <li class="feedback__item">
+            <input class="feedback__input feedback__input--tel" type="tel" name="usertel" required autocomplete="off">
+            <img class="feedback__input--logo modal__input--logo" src="./img/form-tel.svg">
+          </li>
+          <li class="feedback__item">
+            <button class="feedback__input-button" id="send_mess" type="submit">
+              УЗНАТЬ ЦЕНУ
+            </button>
+          </li>
+          <li class="feedback__item feedback__input-group">
+            <div class="feedback__checkbox-group">
+              <input class="feedback__input-checkbox" type="checkbox" id="politics" onclick="check();" value="" checked autocomplete="off"/>
+              <label for="politics">
+                <a class="feedback__link" href="#">
+                  Согласие с политикой конфиденциальности
+                </a>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+
+    <script>
+      var modal = document.querySelector('.modal');
+      var overflow = document.createElement('div');
+
+      function openModal() {
+        overflow.className = "overflow";
+        document.body.appendChild(overflow);
+        var height = modal.offsetHeight;
+        modal.style.marginTop = - height / 2 + "px";
+        modal.style.top = "50%";
+      }
+
+      if (!Element.prototype.remove) {
+        Element.prototype.remove = function remove() {
+          if (this.parentNode) {
+            this.parentNode.removeChild(this);
+          }
+        }
+      }
+
+      overflow.onclick = function () {
+        modal.style.top = "-100%";
+        overflow.remove();
+      }
+    </script>
     
     
     

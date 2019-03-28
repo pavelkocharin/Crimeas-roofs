@@ -13,38 +13,49 @@
   <body class="body-page">
     <header class="header">
       <div class="header__top">
-        <ul class="nav">
-          <li class="nav__item">
-            <a class="nav__link" href="">
-              Услуги
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">
-              Преимущества
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">
-              Материалы
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">
-              Портфолио
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">
-              Отзывы
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">
-              Контакты
-            </a>
-          </li>
-        </ul>
+        <div class="header__nav">
+          <div class="header__nav-mobile"></div>
+          <input type="checkbox" class="header__humburger-nav" id="openSidebarMenu">
+          <label for="openSidebarMenu" class="header__humburger-icon-toggle">
+            <div class="header__humburger-icon header__humburger-icon--diagonal-1"></div>
+            <div class="header__humburger-icon header__humburger-icon--horizontal"></div>
+            <div class="header__humburger-icon header__humburger-icon--diagonal-2"></div>
+          </label>
+          <div class="nav-menu">
+            <ul class="nav">
+              <li class="nav__item">
+                <a class="nav__link" href="">
+                  Услуги
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">
+                  Преимущества
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">
+                  Материалы
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">
+                  Портфолио
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">
+                  Отзывы
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="header-bottom">
         <div class="logo">
@@ -69,7 +80,7 @@
     <main class="main">
       <div class="main__title">
         <h1 class="main__title-text">
-          КРОВЕЛЬНЫЕ РАБОТЫ С ГАРАНТИЕЙ 10 ЛЕТ В СИМФЕРОПОЛЕ И ПО КРЫМУ
+          КРОВЕЛЬНЫЕ РАБОТЫ <br> С ГАРАНТИЕЙ 10 ЛЕТ <br> В СИМФЕРОПОЛЕ И ПО КРЫМУ
         </h1>
       </div>
       <div class="main__content">
@@ -117,43 +128,40 @@
           <p class="feedback__text">
             Оставьте заявку на расчет цены <br> и узнайте точные сроки и стоимость работ
           </p>
-          <form class="feedback__form" id="feedback" name="feedback" method="POST">
-            <ul class="feedback__list">
-              <li class="feedback__item">
-                <input class="feedback__input" type="text" name="username" required autocomplete="off">
-                <img class="feedback__input-logo" src="./img/form-user.svg">
-              </li>
-              <li class="feedback__item">
-                <input class="feedback__input feedback__input--tel" type="tel" name="usertel" required autocomplete="off">
-                <img class="feedback__input-logo" src="./img/form-tel.svg">
-              </li>
-              <li class="feedback__item">
-                <button class="feedback__input-button" id="send_mess" type="submit">
-                  УЗНАТЬ ЦЕНУ
-                </button>
-              </li>
-              <li class="feedback__item feedback__input-group">
-                <div class="feedback__checkbox-group">
-                  <input class="feedback__input-checkbox" type="checkbox" id="politics" onclick="check();" value="" checked autocomplete="off"/><label for="politics">
-                    <a class="feedback__link" href="#">
-                      Согласие с политикой конфиденциальности
-                    </a>
-                  </label>
-                </div>
-                
-                
-              </li>
-            </ul>
-          </form>
+            <form class="feedback__form" id="feedback" name="feedback" method="POST">
+              <ul class="feedback__list">
+                <li class="feedback__item">
+                  <input class="feedback__input" type="text" name="username" required autocomplete="off">
+                  <img class="feedback__input-logo" src="./img/form-user.svg">
+                </li>
+                <li class="feedback__item">
+                  <input class="feedback__input feedback__input--tel" type="tel" name="usertel" required autocomplete="off">
+                  <img class="feedback__input-logo" src="./img/form-tel.svg">
+                </li>
+                <li class="feedback__item">
+                  <button class="feedback__input-button" id="send_mess" type="submit">
+                    УЗНАТЬ ЦЕНУ
+                  </button>
+                </li>
+                <li class="feedback__item feedback__input-group">
+                  <div class="feedback__checkbox-group">
+                    <input class="feedback__input-checkbox" type="checkbox" id="politics" onclick="check();" value="" checked autocomplete="off"/>
+                    <label for="politics">
+                      <a class="feedback__link" href="#">
+                        Согласие с политикой конфиденциальности
+                      </a>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </form>
           </div>
-          
         </div>
-        
+        <div class="main__bcg-man"></div>  
       </div>
-      
-      
     </main>
-    <img class="body__man" src="./img/man.png" alt="строитель в каске">
+    
+    
     
     
 

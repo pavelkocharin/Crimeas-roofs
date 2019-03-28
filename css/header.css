@@ -1,6 +1,15 @@
 .header {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 .header__top {
@@ -8,17 +17,126 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0,23,38, .3);
+  transition: .3s linear;
+  background-color: rgba(0, 23, 38, .3);
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 55px;
+  min-height: 54px;
+}
+
+.header__top:hover {
+  background-color: rgba(0, 23, 38, .2);
 }
 
 .header-bottom {
   display: flex;
   justify-content: space-between;
-  margin: 20px auto 0;
+  margin: 21px auto 0;
   padding: 0;
-  width: 1170px;
+  width: 1140px;
+}
+
+.header__humburger-nav {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .header__top {
+    background-size: cover;
+    background-color: transparent;
+
+    max-width: 100%;
+  }
+  
+  .header-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 21px auto;
+    padding: 0;
+    width: 90%;
+  }
+
+  .header__humburger-nav {
+    position: fixed;
+    box-sizing: border-box;
+    display: none;
+    transition: all 0.3s;
+  }
+
+  .header__nav {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+  }
+
+  .header__humburger-nav:checked ~ .nav-menu {
+    transform: translateX(0);
+  }
+  
+  .header__humburger-icon-toggle {
+    box-sizing: border-box;
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    z-index: 99;
+    transition: all 0.3s;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+  }
+
+  .header__humburger-icon {
+    box-sizing: border-box;
+    position: absolute;
+    transition: all 0.3s;
+    background-color: #dd2c13;
+    width: 100%;
+    height: 3px;
+  }
+
+  .header__humburger-icon--diagonal-1 {
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    transition: all 0.3s;
+  }
+
+  .header__humburger-icon--diagonal-2 {
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    transition: all 0.3s;
+    margin-top: 3px;
+  }
+
+  .header__humburger-icon--horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+
+  .header__humburger-nav:checked ~ .header__humburger-icon-toggle > .header__humburger-icon--horizontal {
+    box-sizing: border-box;
+    transition: all 0.3s;
+    opacity: 0;
+  }
+
+  .header__humburger-nav:checked ~ .header__humburger-icon-toggle > .header__humburger-icon--diagonal-1 {
+    box-sizing: border-box;
+    transition: all 0.3s;
+    transform: rotate(135deg);
+    margin-top: 8px;
+  }
+
+  .header__humburger-nav:checked ~ .header__humburger-icon-toggle > .header__humburger-icon--diagonal-2 {
+    box-sizing: border-box;
+    transition: all 0.3s;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+  }
 }

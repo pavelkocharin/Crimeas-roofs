@@ -1,10 +1,14 @@
+.nav-menu {
+  z-index: 10;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding: 0;
-  width: 1170px;
+  padding: 0 0 3px 6px;
+  width: 1140px;
   height: 100%;
   list-style: none;
 }
@@ -13,8 +17,59 @@
 }
 
 .nav__link {
+  transition: .2s linear;
   text-decoration: none;
   font-size: 16px;
   font-family: 'Exo 2.0 Semi';
   color: #000;
+}
+
+.nav__link:hover {
+  color: #dd2c13;
+}
+
+.nav__link:hover ~ .header__top {
+  background-color: none;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .nav {
+    -flex-direction: column;
+    background-color: rgba(151, 146, 146, .4);
+    max-width: 100%;
+
+
+    display: inline;
+  }
+  
+  .nav__item {
+
+    position: relative;
+
+    border-bottom: 1px solid rgb(151, 146, 146);
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .nav__link {
+    padding: 15px;
+    font-size: 24px;
+  }
+
+
+
+  .nav-menu {
+    position: relative;
+    right: 50px;
+    -webkit-transform: translateX(360px);
+    -moz-transform: translateX(360px);
+    -o-transform: translateX(360px);
+    transform: translateX(360px);
+    transition: transform 350ms ease-in-out;
+    margin-top: 0;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.452);
+    background: linear-gradient(180deg, rgb(2, 247, 153) 0%, rgb(3, 149, 247) 100%);
+    width: 90%;
+    height: auto;
+  }
 }

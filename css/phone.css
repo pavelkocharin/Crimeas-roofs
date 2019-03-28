@@ -1,4 +1,11 @@
 .phone {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -12,7 +19,49 @@
 }
 
 .phone__modale {
+  margin-top: 2px;
   font-family: 'Exo 2.0';
   font-size: 14px;
   color: #dd2c14;
+  text-decoration: none;
+  border-bottom: 1px solid #dd2c14;
+}
+
+.phone__modale:hover {
+  text-shadow:0 0 15px rgb(243, 171, 171);
+  color: #ff1e00;
+  border: none;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .phone {
+    background-color: rgba(212, 208, 208, .5);
+    padding: 5px;
+  }
+  
+  .phone__number {
+    font-family: 'Exo 2.0';
+    font-size: 22px;
+  }
+  
+  .phone__modale {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
 }

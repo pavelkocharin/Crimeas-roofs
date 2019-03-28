@@ -12,30 +12,10 @@
   font-family: 'Exo 2.0';
 }
 
-.body__man {
-  position: absolute;
-  bottom: 0;
-  left: 33%;
-  width: 750px;
-  height: 670px;
-  z-index: 11;
-}
-
-
-/*телефоны портретно*/
 @media (min-width: 320px) and (max-width: 479px) {
   .body-page {
     background-size: cover;
     background-color: rgb(213, 243, 201);
-  }
-  
-  .body__man {
-    position: absolute;
-    bottom: -8px;
-    left: 55%;
-    z-index: 10;
-    width: 150px;
-    height: 200px;
   }
 }
 

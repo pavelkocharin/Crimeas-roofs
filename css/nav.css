@@ -1,4 +1,4 @@
-.nav-menu {
+.nav__menu {
   z-index: 10;
 }
 
@@ -8,12 +8,9 @@
   align-items: center;
   margin: 0;
   padding: 0 0 3px 6px;
-  width: 1140px;
+  max-width: 1140px;
   height: 100%;
   list-style: none;
-}
-
-.nav__item {
 }
 
 .nav__link {
@@ -34,42 +31,95 @@
 
 @media (min-width: 320px) and (max-width: 479px) {
   .nav {
-    -flex-direction: column;
-    background-color: rgba(151, 146, 146, .4);
-    max-width: 100%;
-
-
     display: inline;
+    max-width: 100%;
   }
   
   .nav__item {
-
     position: relative;
-
-    border-bottom: 1px solid rgb(151, 146, 146);
-    padding: 10px 0;
+    border-bottom: 1px solid rgb(146, 151, 150);
+    border-left: 1px solid rgb(146, 151, 150);
+    background: rgb(255, 255, 255);
+    padding: 5px 0 5px 5px;
     width: 100%;
+  }
+
+  .nav__item:first-child {
+    border-top: 1px solid rgb(151, 146, 146);
   }
   
   .nav__link {
     padding: 15px;
-    font-size: 24px;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #190755;
   }
 
-
-
-  .nav-menu {
+  .nav__menu {
     position: relative;
-    right: 50px;
+    top: -50px;
+    right: -150px;
     -webkit-transform: translateX(360px);
     -moz-transform: translateX(360px);
     -o-transform: translateX(360px);
     transform: translateX(360px);
     transition: transform 350ms ease-in-out;
-    margin-top: 0;
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.452);
-    background: linear-gradient(180deg, rgb(2, 247, 153) 0%, rgb(3, 149, 247) 100%);
     width: 90%;
-    height: auto;
+    min-height: 300px;
   }
 }
+
+@media (min-width: 480px) and (max-width: 599px) {
+  .nav {
+    display: inline;
+    max-width: 100%;
+  }
+  
+  .nav__item {
+    position: relative;
+    border-bottom: 1px solid rgb(146, 151, 150);
+    border-left: 1px solid rgb(146, 151, 150);
+    background: rgb(255, 255, 255);
+    padding: 5px 0 5px 5px;
+    width: 100%;
+  }
+
+  .nav__item:first-child {
+    border-top: 1px solid rgb(151, 146, 146);
+  }
+  
+  .nav__link {
+    padding: 15px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #190755;
+  }
+
+  .nav__menu {
+    position: relative;
+    top: -50px;
+    right: -350px;
+    -webkit-transform: translateX(360px);
+    -moz-transform: translateX(360px);
+    -o-transform: translateX(360px);
+    transform: translateX(360px);
+    transition: transform 350ms ease-in-out;
+    width: 90%;
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .nav {
+    padding: 0 15px;
+    max-width: 767px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nav {
+    padding: 0 15px;
+    max-width: 1199px;
+  }
+}
+

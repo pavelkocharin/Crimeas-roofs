@@ -67,7 +67,7 @@
 
   .nav__menu {
     position: relative;
-    top: -50px;
+    top: 0;
     right: -150px;
     -webkit-transform: translateX(360px);
         -ms-transform: translateX(360px);
@@ -110,7 +110,7 @@
 
   .nav__menu {
     position: relative;
-    top: -50px;
+    top: 0px;
     right: -350px;
     -webkit-transform: translateX(360px);
         -ms-transform: translateX(360px);

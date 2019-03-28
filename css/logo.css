@@ -1,5 +1,6 @@
 .logo {
   display: flex;
+  padding-left: 2px;
 }
 
 .logo__title {

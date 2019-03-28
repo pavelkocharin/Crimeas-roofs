@@ -46,19 +46,21 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-bottom: 139px;
 }
 
 .main__feedback {
+  position: relative;
   z-index: 3;
   margin-top: 32px;
   margin-left: 3px;
 }
 
-.main__bcg-man {
+.main__content-man {
   z-index: 2;
   position: absolute;
   bottom: 0;
-  left: 10%;
+  left: 20%;
   background-image: url("../img/man.png");
   background-repeat: no-repeat;
   width: 690px;

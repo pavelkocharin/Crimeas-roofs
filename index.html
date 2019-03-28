@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/feedback.css" type="text/css">
     <link rel="stylesheet" href="css/benefits.css" type="text/css">
-    <link rel="stylesheet" href="css/fonts/exo 2.0/stylesheet.css" type="text/css">        
+    <link rel="stylesheet" href="css/fonts/exo2.0/stylesheet.css" type="text/css">        
   </head>
 
   <body class="body-page">
@@ -94,7 +94,7 @@
       <div class="main__content">
         <div class="benefits">
           <div class="benefits__item">
-            <img class="benefits__img" src="./img/b1.png">
+            <img class="benefits__img" src="./img/b1.png" alt="icon1">
             <div class="benefits__description">
               <h3 class="benefits__title">
                 БЫСТРО
@@ -105,7 +105,7 @@
             </div>
           </div>
           <div class="benefits__item">
-            <img class="benefits__img" src="./img/b2.png">
+            <img class="benefits__img" src="./img/b2.png" alt="icon2">
             <div class="benefits__description">
               <h3 class="benefits__title">
                 ВЫГОДНО
@@ -116,7 +116,7 @@
             </div>
           </div>
           <div class="benefits__item">
-            <img class="benefits__img" src="./img/b3.png">
+            <img class="benefits__img" src="./img/b3.png" alt="icon3">
             <div class="benefits__description">
               <h3 class="benefits__title">
                 НАДЕЖНО
@@ -140,11 +140,11 @@
               <ul class="feedback__list">
                 <li class="feedback__item">
                   <input class="feedback__input" type="text" name="username" required autocomplete="off">
-                  <img class="feedback__input-logo" src="./img/form-user.png">
+                  <img class="feedback__input-logo" src="./img/user.png" alt="icon-user">
                 </li>
                 <li class="feedback__item">
-                  <input class="feedback__input feedback__input--tel" type="tel" name="usertel" required autocomplete="off">
-                  <img class="feedback__input-logo" src="./img/form tel.png">
+                  <input class="feedback__input feedback__input--tel" type="tel" name="usertel" required>
+                  <img class="feedback__input-logo" src="./img/tel.png" alt="icon-tel">
                 </li>
                 <li class="feedback__item">
                   <button class="feedback__input-button" id="send_mess" type="submit">
@@ -176,24 +176,24 @@
       <p class="feedback__text">
         Оставьте заявку на расчет цены <br> и узнайте точные сроки и стоимость работ
       </p>
-      <form class="feedback__form" id="feedback" name="feedback" method="POST">
+      <form class="feedback__form" id="feedback-modal" name="feedback" method="POST">
         <ul class="feedback__list modal__list">
           <li class="feedback__item">
             <input class="feedback__input modal__imput" type="text" name="username" required autocomplete="off">
-            <img class="feedback__input--logo modal__input--logo" src="./img/form-user.png">
+            <img class="feedback__input--logo modal__input--logo" src="./img/user.png" alt="icon-user">
           </li>
           <li class="feedback__item">
             <input class="feedback__input feedback__input--tel" type="tel" name="usertel" required autocomplete="off">
-            <img class="feedback__input--logo modal__input--logo" src="./img/form tel.png">
+            <img class="feedback__input--logo modal__input--logo" src="./img/tel.png" alt="icon-tel">
           </li>
           <li class="feedback__item">
-            <button class="feedback__input-button" id="send_mess" type="submit">
+            <button class="feedback__input-button" id="send_mess-modale" type="submit">
               УЗНАТЬ ЦЕНУ
             </button>
           </li>
           <li class="feedback__item feedback__input-group">
             <div class="feedback__checkbox-group">
-              <input class="feedback__input-checkbox" type="checkbox" id="politics" value="" checked autocomplete="off"/>
+              <input class="feedback__input-checkbox" type="checkbox" id="politics-modal" value="" checked/>
               <label for="politics">
                 <a class="feedback__link" href="#">
                   Согласие с политикой конфиденциальности

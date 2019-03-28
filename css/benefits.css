@@ -1,4 +1,7 @@
 .benefits {
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -6,6 +9,9 @@
 }
 
 .benefits__item {
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: flex-start;
   align-items: center;

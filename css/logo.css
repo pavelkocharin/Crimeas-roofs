@@ -1,4 +1,7 @@
 .logo {
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
 }
 

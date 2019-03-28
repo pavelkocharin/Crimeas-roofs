@@ -3,6 +3,9 @@
 }
 
 .nav {
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,9 +62,6 @@
     position: relative;
     top: -50px;
     right: -150px;
-    -webkit-transform: translateX(360px);
-    -moz-transform: translateX(360px);
-    -o-transform: translateX(360px);
     transform: translateX(360px);
     transition: transform 350ms ease-in-out;
     width: 90%;
@@ -99,9 +99,6 @@
     position: relative;
     top: -50px;
     right: -350px;
-    -webkit-transform: translateX(360px);
-    -moz-transform: translateX(360px);
-    -o-transform: translateX(360px);
     transform: translateX(360px);
     transition: transform 350ms ease-in-out;
     width: 90%;
@@ -122,4 +119,3 @@
     max-width: 1199px;
   }
 }
-

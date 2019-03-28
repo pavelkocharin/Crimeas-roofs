@@ -163,7 +163,7 @@
     <div class="modal">
       <h3 class="feedback__title modal__title">
         УЗНАЙТЕ ЦЕНУ <br> ЗА 3 МИНУТЫ
-        <btn class="modal__close">x</btn>
+        <btn class="modal__close" onclick="closeModal();">x</btn>
       </h3>
       <p class="feedback__text">
         Оставьте заявку на расчет цены <br> и узнайте точные сроки и стоимость работ
@@ -172,11 +172,11 @@
         <ul class="feedback__list modal__list">
           <li class="feedback__item">
             <input class="feedback__input modal__imput" type="text" name="username" required autocomplete="off">
-            <img class="feedback__input--logo modal__input--logo" src="./img/form-user.svg">
+            <img class="feedback__input--logo modal__input--logo" src="./img/form-user.png">
           </li>
           <li class="feedback__item">
             <input class="feedback__input feedback__input--tel" type="tel" name="usertel" required autocomplete="off">
-            <img class="feedback__input--logo modal__input--logo" src="./img/form-tel.svg">
+            <img class="feedback__input--logo modal__input--logo" src="./img/form tel.png">
           </li>
           <li class="feedback__item">
             <button class="feedback__input-button" id="send_mess" type="submit">
@@ -196,36 +196,6 @@
         </ul>
       </form>
     </div>
-
-
-    <script>
-      var modal = document.querySelector('.modal');
-      var overflow = document.createElement('div');
-
-      function openModal() {
-        overflow.className = "overflow";
-        document.body.appendChild(overflow);
-        var height = modal.offsetHeight;
-        modal.style.marginTop = - height / 2 + "px";
-        modal.style.top = "50%";
-      }
-
-      if (!Element.prototype.remove) {
-        Element.prototype.remove = function remove() {
-          if (this.parentNode) {
-            this.parentNode.removeChild(this);
-          }
-        }
-      }
-
-      overflow.onclick = function () {
-        modal.style.top = "-100%";
-        overflow.remove();
-      }
-    </script>
-    
-    
-    
-
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -34,10 +34,6 @@
 }
 
 .feedback__item {
-  display: -webkit-flex;
-  display: -webkit-box;
-  display: -moz-flex;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -ms-flex;
   display: -o-flex;
@@ -185,20 +181,4 @@
     max-width: 100%;
     min-height: 45px;
   }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  
-}
-
-@media (min-width: 1024px) and (max-width: 1199px) {
-
 }

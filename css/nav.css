@@ -111,7 +111,7 @@
   .nav__menu {
     position: relative;
     top: 0px;
-    right: -350px;
+    right: -300px;
     -webkit-transform: translateX(360px);
         -ms-transform: translateX(360px);
             transform: translateX(360px);

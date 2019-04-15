@@ -7,7 +7,7 @@ function openModal() {
   overflow.className = "overflow";
   document.body.appendChild(overflow);
   modal.style.marginTop = - height / 2 + "px";
-  modal.style.top = "50%";
+  modal.style.top = "60%";
 }
 
 if (!Element.prototype.remove) {

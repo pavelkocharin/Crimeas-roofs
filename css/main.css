@@ -93,6 +93,7 @@
     
   .main__title-text {
     padding: 15px;
+    font-size: 3vh;
   }
   
   .main__content {
@@ -108,11 +109,7 @@
   }
 
   .main__content-man {
-    bottom: 0;
-    left: 10%;
-    background-size: contain;
-    width: 150px;
-    height: 125px;
+    display: none;
   }
 }
 
@@ -148,11 +145,7 @@
   }
 
   .main__content-man {
-    bottom: 0;
-    left: 10%;
-    background-size: contain;
-    width: 150px;
-    height: 125px;
+    display: none;
   }
 }
 
@@ -175,7 +168,7 @@
     left: 30%;
     background-size: contain;
     width: 400px;
-    height: 350px;
+    height: 340px;
   }
 
   .main__title {
@@ -195,10 +188,10 @@
 
   .main__content-man {
     bottom: 0;
-    left: 10%;
+    left: 15%;
     background-size: contain;
     width: 400px;
-    height: 350px;
+    height: 340px;
   }
 
   .main__title {
